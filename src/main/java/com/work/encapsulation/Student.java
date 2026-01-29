@@ -1,6 +1,6 @@
 package com.work.encapsulation;
 
-public class Student {
+public class Student {    //soem  fhdvrf vrj
     private int roll;
     private String name;
 
