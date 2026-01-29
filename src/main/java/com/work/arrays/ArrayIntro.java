@@ -1,4 +1,4 @@
-package com.work.Arrays;
+package com.work.arrays;
 
 public class ArrayIntro {
     public static void main(String[] args) {
