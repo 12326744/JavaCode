@@ -1,6 +1,6 @@
 package com.work.inheritance;
 
-public class Football2 extends Player{  // some changes
+public class Football2 extends Player{
 
     int goal;
     int jerseyNum;
