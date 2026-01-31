@@ -16,6 +16,7 @@ class A{
 class B extends A{
     int x=100;
 }
+
 class C extends B{
     int x=1000;
 
