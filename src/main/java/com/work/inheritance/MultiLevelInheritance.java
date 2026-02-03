@@ -10,8 +10,8 @@ public class MultiLevelInheritance {
 
 class A{
     int x=10;
-    private  int y=80;
-}
+//    private int y=80;   // private cant be inherited
+    }
 
 class B extends A{
     int x=100;
@@ -25,3 +25,5 @@ class C extends B{
         System.out.println(super.x);   //super only access the immediate parent class
     }
 }
+
+// Class cannot have multiple parents
