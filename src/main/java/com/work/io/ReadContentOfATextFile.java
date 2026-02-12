@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class ReadContentOfATextFile {
     public static void main(String... args) {
-        File path = new File(FilePaths.SAMPLE_FOLDER_ABSOLUTE_PATH);
+        File path = new File(FilePaths.SAMPLE_FILE_ABSOLUTE_PATH);
 //        if(path.exists() && path.isFile()){
 //            try {
 //                Scanner scanner=new Scanner(path);
@@ -32,7 +32,10 @@ public class ReadContentOfATextFile {
 //        }
         String msg="Be Ready for the test this friday";
         if(path.exists() && path.isFile()){
-            try(FileOutputStream fos=new FileOutputStream(path);){
+            try(FileOutputStream fos=new FileOutputStream(path,true)){
+                //append = true means it will start appending instead of replacing
+
+//            try(FileOutputStream fos=new FileOutputStream(path);){
                 fos.write(msg.getBytes());
             }catch (IOException e){
                 throw new RuntimeException(e);

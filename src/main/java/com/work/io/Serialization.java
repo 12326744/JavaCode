@@ -26,6 +26,8 @@ class Student implements Serializable {
     transient int age;
     String name;
 
+    private static final long serialVersionUid = 2L; // it should remain same while serialization and deserialization
+
     public Student(int age, String name) {
         this.age = age;
         this.name = name;
