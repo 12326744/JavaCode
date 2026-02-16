@@ -8,7 +8,7 @@ public class Serialization {
         System.out.println(st1);
 
         File path=new File(FilePaths.SAMPLE_FILE_ABSOLUTE_PATH);
-        if(path.isFile() && path.isFile()){
+        if(path.isFile()){
             try(FileOutputStream fos=new FileOutputStream(path);
                 ObjectOutputStream oos=new ObjectOutputStream(fos);){
                 oos.writeObject(st1);

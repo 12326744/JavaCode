@@ -20,10 +20,10 @@ public class Main {
             System.out.println("Exception Occurred");
             e.printStackTrace();
         }catch(InputMismatchException e){
-            System.out.println("xception Occurred");
+            System.out.println("Exception Occurred");
             e.printStackTrace();
         }catch(Exception e){  //Always put the default Exception block at the end
-            System.out.println("xception Occurred");
+            System.out.println("Exception Occurred");
             e.printStackTrace();
         }
         System.out.println("END");
